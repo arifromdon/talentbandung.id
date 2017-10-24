@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.site-content {
+	font-family: helvetica;
+	text-align: center;
+}
+
+.hero {
+	padding: 6rem 0 6rem 0;
+	margin-bottom: 1rem;
+ 	background-color: grey;
+ 	text-align: center;
+ 	line-height: 3rem;
+}
+
+h1 .subtitle {
+	font-family: roboto;
+	font-size: 130%;
+	text-align: center;
+}
+
+input[type=text] {
+	width: 25%;
+	padding: 7px 10px;
+	margin: 0;
+	display: inline-block;
+	border: none;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background-color: aqua;
+}
+
+button[type=submit] {
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	text-decoration: none;
+	background-color: aqua;
+	margin: 0 0 0 4px;
+	padding: 7px 10px;
+
+}
+
+.list-taman {
+	margin: 0 2rem 0 2rem;
+	min-height: 50rem;
+	padding: 3rem 0 3rem 0;
+	background-color: yellow;
+}
+
+.taman {
+	margin: 4rem;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	border-color: black;
+	background-clip: border-box;
+	border: 1px solid black;
+	position: relative;
+	text-align: center;
+}
+
+.footer {
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	margin-top: 10px; 
+	padding: 2rem;
+}
