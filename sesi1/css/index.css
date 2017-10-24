@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+}
+
+.img-steve {
+	position: fixed;
+	height: auto;
+	width: 100%;
+	z-index: -1;
+	top: 0;
+}
+
+.header-bdg {
+	font-family: helvetica;
+	width: 300px;
+	padding: 50px 0 0 12%;
+	text-align: center;
+	color: #d4d0d0;
+}
+
+.biograph {
+	padding: 25px 0 0 10px;
+	width: 500px;
+}
+
+.link-bio, .home-back {
+	background-color: #d4d0d0;
+	border-radius: 3px;
+	padding: 10px 20px;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	color: #131212;
+}
+ .table-row ,.bio-head {
+ 	color: #d4d0d0;
+ 	font-family: helvetica;
+ 	text-align: center;
+ }
+
+ .list ,a {
+ 	text-decoration: none;
+ 	font-family: helvetica;
+ 	color: #989898;
+ 	font-size: 13px;
+ }
