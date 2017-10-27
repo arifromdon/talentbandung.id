@@ -4,73 +4,146 @@
 }
 
 .site-content {
-	font-family: helvetica;
-	text-align: center;
+	font-family: "Roboto";
+	color: black;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: linear-gradient(to top, white, white, white, white, transparent), url(../img/cibeunying.jpg);
+	background-repeat: no-repeat;
 }
 
 .hero {
-	padding: 6rem 0 6rem 0;
-	margin-bottom: 1rem;
- 	background-color: grey;
- 	text-align: center;
- 	line-height: 3rem;
+	text-align: center;
+	padding: 6rem 0;
+	margin-bottom: 0;
+	height: 100%;
+	width: auto;
 }
 
-h1 .subtitle {
-	font-family: roboto;
-	font-size: 130%;
-	text-align: center;
+.hero p {
+	font-size: 1.2rem;
+	font-weight: normal;
+	line-height: 4rem;
+}
+
+h1 {
+	margin: 0;
+	display: block;
+	font-size: 200%;
 }
 
 input[type=text] {
-	width: 25%;
+	outline: none;
+	width: 28%;
 	padding: 7px 10px;
-	margin: 0;
+	margin: 2rem;
 	display: inline-block;
 	border: none;
 	border-radius: 20px;
-	box-sizing: border-box;
-	background-color: aqua;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-decoration: none;
 }
 
 button[type=submit] {
+	outline: none;
 	cursor: pointer;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	text-decoration: none;
-	background-color: aqua;
-	margin: 0 0 0 4px;
-	padding: 7px 10px;
+	background-color: white;
+	margin: auto;
+	padding: 2px 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+i {
+	font-size: 20px;
+	padding: 3px;
+	color: grey;
 }
 
 .list-taman {
-	margin: 0 2rem 0 2rem;
-	min-height: 50rem;
-	padding: 3rem 0 3rem 0;
-	background-color: yellow;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4rem 10rem;
+	padding: 0 15px;
+	max-width: 100%;
+	height: auto;
 }
 
 .taman {
-	margin: 4rem;
+	margin-bottom: 2rem;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: .50rem;
 	float: left;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
-	min-width: 0;
-	border-color: black;
-	background-clip: border-box;
-	border: 1px solid black;
 	position: relative;
 	text-align: center;
+	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.footer {
+.taman:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.taman-detail {
+	color: #4c4b4b;
+	line-height: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto;
 	display: block;
+	vertical-align: middle;
+	max-width: 100%;
+	margin: auto;
+}
+
+.subtitle-head {
+	font-family: caveat;
+	font-size: 4rem;
+	font-weight: normal;
+}
+
+.title-head {
+	font-family: playfair display;
+	font-size: 4rem;
+	font-weight: normal;
+	line-height: 3rem;
+}
+
+.subtitle {
+	font-family: "caveat";
+	font-weight: normal;
+}
+
+.title {
+	font-family: playfair display;
+}
+
+p {
+	font-size: 13px;
+	font-family: roboto;
+}
+
+.footer p {
+	text-align: center;
 	left: 0;
 	bottom: 0;
-	width: 100%;
-	background-color: grey;
-	color: white;
-	margin-top: 10px; 
+	max-width: 100%;
+	color: black;
+	margin: 4rem auto; 
 	padding: 2rem;
+	font-size: 14px;
+	font-weight: bold;
 }
