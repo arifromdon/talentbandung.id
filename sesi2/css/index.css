@@ -4,17 +4,19 @@
 }
 
 .site-content {
-	font-family: helvetica;
+	font-family: "Roboto";
+	color: black;
 	margin: 0;
 	padding: 0;
 	display: block;
+	background: linear-gradient(to top, white, white, white, white, transparent), url(../img/cibeunying.jpg);
+	background-repeat: no-repeat;
 }
 
 .hero {
 	text-align: center;
 	padding: 6rem 0;
 	margin-bottom: 0;
-	background-color: indigo;
 	height: 100%;
 	width: auto;
 }
@@ -22,39 +24,43 @@
 h1 {
 	margin: 0;
 	display: block;
-}
-
-h1 .subtitle {
-	font-family: roboto;
-	font-size: 130%;
+	font-size: 200%;
 }
 
 input[type=text] {
+	outline: none;
 	width: 28%;
 	padding: 7px 10px;
-	margin: 1.5rem;
+	margin: 2rem;
 	display: inline-block;
 	border: none;
 	border-radius: 20px;
-	box-sizing: border-box;
-	background-color: aqua;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-decoration: none;
 }
 
 button[type=submit] {
+	outline: none;
 	cursor: pointer;
 	border: 1px solid transparent;
 	border-radius: 5px;
 	text-decoration: none;
-	background-color: aqua;
-	margin: 0 0 0 4px;
-	padding: 7px 10px;
+	background-color: white;
+	margin: auto;
+	padding: 2px 4px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+i {
+	font-size: 20px;
+	padding: 3px;
 }
 
 .list-taman {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 4rem 5rem 0 5rem;
+	margin: 4rem 10rem;
 	padding: 0 15px;
 	max-width: 100%;
 	height: auto;
@@ -79,6 +85,11 @@ button[type=submit] {
 	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
+.taman-detail {
+	color: #4c4b4b;
+	line-height: 2rem;
+}
+
 a {
 	text-decoration: none;
 }
@@ -91,13 +102,38 @@ img {
 	margin: auto;
 }
 
+.subtitle-head {
+	font-family: caveat;
+	font-size: 4rem;
+	font-weight: normal;
+}
+
+.title-head {
+	font-family: playfair display;
+	font-size: 4rem;
+	font-weight: normal;
+}
+
+.subtitle {
+	font-family: "caveat";
+	font-weight: normal;
+}
+
+.title {
+	font-family: playfair display;
+}
+
+p {
+	font-size: 13px;
+	font-family: roboto;
+}
+
 .footer {
 	text-align: center;
 	left: 0;
 	bottom: 0;
 	max-width: 100%;
-	background-color: grey;
-	color: white;
-	margin-top: 10px; 
+	color: black;
+	margin: 4rem auto; 
 	padding: 2rem;
 }
