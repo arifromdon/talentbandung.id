@@ -1,91 +1,118 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .site-content {
 	font-family: "Roboto";
 	color: black;
-	margin: 0;
-	padding: 0;
-	display: block;
+	margin: 0 auto;
 	background: linear-gradient(to top, white, white, white, white, transparent), url(../img/cibeunying.jpg);
 	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 100%;
 }
 
 .hero {
 	text-align: center;
-	padding: 6rem 0;
-	margin-bottom: 0;
+	padding: 120px 15px;
 	height: 100%;
 	width: auto;
 }
 
-.hero p {
-	font-size: 1.2rem;
+.hero .subtitle {
+	font-family: caveat;
+	font-size: 64px;
 	font-weight: normal;
+}
+
+.hero .title {
+	font-family: playfair display;
+	font-size: 72px;
+	font-weight: normal;
+}
+
+.hero p {
+	font-size: 22px;
+	font-weight: lighter;
 	line-height: 4rem;
 }
 
-h1 {
-	margin: 0;
+.title, .subtitle {
 	display: block;
-	font-size: 200%;
 }
 
-input[type=text] {
-	outline: none;
-	width: 28%;
-	padding: 7px 10px;
-	margin: 2rem;
-	display: inline-block;
-	border: none;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	text-decoration: none;
+.taman .subtitle {
+	font-family: "caveat";
+	font-weight: normal;
 }
 
-button[type=submit] {
-	outline: none;
-	cursor: pointer;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	text-decoration: none;
+.taman .title {
+	font-family: playfair display;
+}
+
+.hero form {
+	max-width: 550px;
+	margin   : 70px auto 0;
+	position : relative;
+}
+
+.hero form input {
+	outline         : none;
+	width           : 100%;
+	font-size       : 12px;
+	padding         : 10px 60px 10px 15px;
+	display         : block;
+	border          : none;
+	border-radius   : 45px;
 	background-color: white;
-	margin: auto;
-	padding: 2px 4px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow      : 0 10px 13px rgba(0, 0, 0, 0.10);
+	text-decoration : none;
+}
+
+.hero form button {
+	outline   : none;
+	position  : absolute;
+	top       : -7px;
+	right     : 10px;
+	font-size : 36px;
+	color     : #e3a6a9;
+	cursor    : pointer;
+	border    : none;
+	background: none;
 }
 
 i {
-	font-size: 20px;
-	padding: 3px;
-	color: grey;
+	font-size: 25px;
+	padding  : 3px;
+	color    : grey;
 }
 
+/*batas header*/
+
 .list-taman {
-	display: flex;
+	display  : flex;
 	flex-wrap: wrap;
-	margin: 4rem 10rem;
-	padding: 0 15px;
+	margin   : 4rem 10rem;
+	padding  : 0 15px;
 	max-width: 100%;
-	height: auto;
+	height   : auto;
 }
 
 .taman {
-	margin-bottom: 2rem;
-	margin-right: auto;
-	margin-left: auto;
-	padding-bottom: .50rem;
-	float: left;
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	text-align: center;
+	margin-bottom   : 2rem;
+	margin-right    : auto;
+	margin-left     : auto;
+	padding-bottom  : .50rem;
+	float           : left;
+	width           : 30%;
+	display         : flex;
+	flex-direction  : column;
+	position        : relative;
+	text-align      : center;
 	background-color: white;
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow      : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .taman:hover {
@@ -93,7 +120,7 @@ i {
 }
 
 .taman-detail {
-	color: #4c4b4b;
+	color      : #4c4b4b;
 	line-height: 2rem;
 }
 
@@ -102,48 +129,27 @@ a {
 }
 
 img {
-	height: auto;
-	display: block;
+	height        : auto;
+	display       : block;
 	vertical-align: middle;
-	max-width: 100%;
-	margin: auto;
+	max-width     : 100%;
+	margin        : auto;
 }
 
-.subtitle-head {
-	font-family: caveat;
-	font-size: 4rem;
-	font-weight: normal;
-}
-
-.title-head {
-	font-family: playfair display;
-	font-size: 4rem;
-	font-weight: normal;
-	line-height: 3rem;
-}
-
-.subtitle {
-	font-family: "caveat";
-	font-weight: normal;
-}
-
-.title {
-	font-family: playfair display;
-}
 
 p {
-	font-size: 13px;
+	font-size  : 13px;
 	font-family: roboto;
 }
 
 .footer p {
-	text-align: center;
-	left: 0;
-	bottom: 0;
-	max-width: 100%;
-	color: black;
-	margin: 4rem auto; 
-	padding: 2rem;
-	font-size: 14px;
+	text-align : center;
+	left       : 0;
+	bottom     : 0;
+	max-width  : 100%;
+	color      : black;
+	margin     : 4rem auto; 
+	padding    : 2rem;
+	font-size  : 14px;
 	font-weight: bold;
 }
