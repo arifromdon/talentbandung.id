@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Caveat|Playfair+Display:700|Roboto:400,400i" 
+		rel="stylesheet">
+		<title>Taman-Taman di Bandung</title>
+		<link rel="stylesheet" href="assets/css/cover.css">
+	</head>
+	<body>
+		<div class="cover-page">
+			<div class="cover-head">
+				<h1 class="cover-title">
+					<span class="subtitle">Taman</span>
+					<span class="title">Balai Kota</span>
+				</h1>
+				<p class="cover-disc">
+					Taman ini sudah sejak lama berdiri, dan sering digunakan untuk berolahraga seperti ber- 
+					sepeda. Namun dengan sedikit renovasi dan ditambahnya fasilitas, taman ini semakin ramai 
+					dikunjungi, entah untuk bersantai, berolahraga maupun bermain. Prisma gembok cinta, salah 
+					satu fasilitas yang disediakan untuk menggembok cinta dengan sebuah gembok, cocok bagi 
+					pasangan yang sedang jatuh cinta. Jika belum punya pasangan jangan berkecil hati, Anda 
+					juga bisa datang ke taman ini untuk sekedar menjelajah dunia maya dengan fasilitas Wi-fi 
+					gratis yang disediakan ataupun berfoto.
+				</p>
+			</div>
+
+<!--batas head-->
+			<div class="arrow">
+				<div class="slide-img">
+					<a href="#">
+						<span class="i-left">
+							<img src="assets/img/left.png" alt="left">
+						</span>
+					</a>
+					<div class="slide-taman">
+						<img src="assets/img/bl1.jpg" alt="balkot 1">
+					</div>
+					<div class="slide-taman">
+						<img src="assets/img/bl2.jpg" alt="balkot 2">
+					</div>
+					<div class="slide-taman">
+						<img src="assets/img/bl3.jpg" alt="balkot 3">
+					</div>
+					<a href="#">
+						<span class="i-right">
+							<img src="assets/img/right.png" alt="right">
+						</span>	
+					</a>
+				</div>
+			</div>
+
+<!--batas slide-->
+
+			<div class="map-button">
+				<div id="map"></div>
+					<a href="index.html" class="index-page" alt="HOME">
+						<span class="index-page-home">
+							<img src="assets/img/homew.png" alt="home">
+							<p>Kembali ke Halaman Utama</p>
+						</span>
+					</a>
+					<a href="https://www.google.com/maps/d/viewer?mid=1B_9J9TUDs3pFTSt49aL8FU5BuOw&hl=en&ll=-6.922768682428266%2C107.64772850000008&z=14" 
+					class="index-page" alt="google maps">
+						<span class="index-page-comp">
+							<img src="assets/img/compasw.png" alt="compass">
+							<p>Dapatkan Petunjuk Arah</p>
+						</span>
+					</a>
+			</div>
+
+<!--batas map-->			
+
+			<div class="cover-footer">
+				<p>Copyright 2017 by talentbandung.id</p>
+			</div>
+
+
+
+
+
+
+	    <script>
+		      function initMap() {
+	        var balkot = {lat: -6.912963, lng: 107.609603};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 15,
+	          center: balkot
+	        });
+	        var marker = new google.maps.Marker({
+	          position: balkot,
+	          map: map
+	        });
+	      }
+	    </script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj9omzCgm9aMi8JKxCaK7tdSd3b-HHljA&callback=initMap"
+	    async defer></script>
+		</div>
+		
+	</body>
+</html>
