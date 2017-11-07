@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#button-workshop {
+	margin: auto;
+	width: auto;
+	height: 100%;
+	position: relative;
+	display: block;
+	background: linear-gradient(to bottom, yellow, transparent), #008CBA;
+	background-size: cover;
+}
+
+.button-con {
+	margin: 14% 20%;
+	padding: 5%;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	background: #e7e7e7;
+	border: 5px solid #555555;
+	border-radius: 10px;
+}
+
+.button-place {
+	padding: 10px 15px;
+	margin: 10px;
+	background-color: white;
+	border: 2px solid #4CAF50;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: roboto;
+}
