@@ -133,6 +133,8 @@ figure img {
 	max-width: 70%;
 	min-height: auto;
 	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: 5px;
 }
 
 .title {
