@@ -1,0 +1,138 @@
+* {
+	margin    : 0;
+	padding   : 0;
+	border    : 0;
+	box-sizing: border-box;
+}
+
+body {
+	color : #484848;
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	font-family     : Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+	background-color: transparent;
+}
+
+.navbar {
+	margin: auto;
+	margin-bottom: 4rem;
+}
+
+.list-cont {
+	position        : relative;
+	margin          : auto 2rem;
+}
+
+.list-cont > a {
+	float          : right;
+	display        : block;
+	color          : grey;
+	text-align     : center;
+	padding        : 14px 16px;
+	text-decoration: none;
+	font-size      : 15px;
+	transition     : 0.5s;
+}
+
+.list-cont a:hover {
+	border-bottom: 2px solid #484848;
+	color        : #655f5f;
+}
+
+.list-cont a.active {
+	color        : black;
+	border-bottom: 2px solid #484848;
+}
+
+.sticky {
+	position: fixed;
+	top     : 0;
+	width   : 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.title-banner {
+	display: inline-block;
+	position: relative;
+	margin: auto;
+}
+
+.title-banner > img {
+	display  : inline-block;
+	max-width: 10%;
+	margin: 10px auto;
+}
+
+.title {
+	margin: auto;
+	display: block;
+	font-size: 3rem;
+	color: #FF5A5F;
+	font-weight: bold;
+}
+
+.subtitle {
+	margin: auto;
+	display: block;
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+
+
+		/*end of navbar*/
+
+
+
+.main {
+	margin: 3rem 5rem;
+	display: block;
+	position: relative;
+	background-color: transparent;
+}
+
+.main-title {
+	margin: 3rem auto;
+}
+
+.grid-content {
+	margin: auto;
+}
+
+.grid-item {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.content-item .img-content{
+	max-width: 100%;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	padding: 8px;
+}
+
+
+
+
+
+
+
+.footer {
+	width           : auto;
+	height          : 4rem;
+	font-size       : 15px;
+	text-align      : center;
+	margin          : auto;
+	background-color: transparent;
+	display         : block;
+}
+
+.footer > p {
+	line-height: 4rem;
+}
