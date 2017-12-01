@@ -105,6 +105,11 @@ body {
 	font-weight: normal;
 }
 
+.main-content {
+	position: relative;
+	display: block;
+}
+
 .main-content > .content-main {
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -122,13 +127,19 @@ body {
 }
 
 .content-quotes {
-	
+	text-align: justify;
 }
 
-figure img {
-	max-width: 90%;
+figure {
+	padding: 9%;
+}
+
+figure > img {
+	max-width: 100%;
+	height: auto;
 	position: relative;
-	margin: auto 30px;
+	display: block;
+	margin: auto;
 }
 
 .content-main > article, 
@@ -157,7 +168,7 @@ article {
 
 .footer {
 	width           : auto;
-	height          : 4rem;
+	height          : 100%;
 	font-size       : 15px;
 	text-align      : center;
 	margin          : auto;
@@ -165,6 +176,15 @@ article {
 	display         : block;
 }
 
+.footer > img {
+	max-width: 10%;
+	height: auto;
+	padding: 0 1rem;
+	display: inline-block;
+	margin: auto;
+}
+
 .footer > p {
 	line-height: 4rem;
+	display: inline-block;
 }

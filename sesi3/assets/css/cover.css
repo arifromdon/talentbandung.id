@@ -193,23 +193,23 @@ body {
 
 
 
-@media (max-width: 1200px){
+@media (max-width: 480px){
 
 
 .cover-head {
 	text-align: center;
 	height    : 100%;
 	width     : auto;
-	padding   : 7% 22% 0;
+	padding   : 7% 10% 0;
 }
 
 .cover-title {
 	margin : auto;
-	padding: 13% 6% 5%;
+	padding: 7% 6% 5%;
 }
 
 .subtitle {
-	font-size  : 45px;
+	font-size  : 25px;
 	font-family: caveat;
 	font-weight: normal;
 	display    : block;
@@ -217,20 +217,20 @@ body {
 }
 
 .title {
-	font-size  : 55px;
+	font-size  : 28px;
 	font-family: playfair display;
 	font-weight: normal;
 	display    : block;
-	line-height: 65px;
+	line-height: 15px;
 }
 
 .cover-disc {
-	padding    : 9% 0 11%;
+	padding    : 3% 0 11%;
 	font-family: roboto;
 	margin     : auto;
 	position   : relative;
-	line-height: 27px;
-	font-size  : 16px;
+	line-height: 15px;
+	font-size  : 10px;
 	font-weight: bold;
 	display    : block;
 }

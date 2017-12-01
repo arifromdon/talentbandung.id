@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Jelajah Taman Tematik Bandung</title>
+		<link href="https://fonts.googleapis.com/css?family=Caveat|Playfair+Display:700|Roboto:300,400,400i" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="assets/css/index.css">
+	</head>
+	<body>
+		<div class="site-content">
+			<div class="hero">
+				<h1>
+					<span class="subtitle">Jelajah</span>	
+					<span class="title">Taman Bandung</span>
+				</h1>
+				<p>Ada lebih dari 20+ Taman Tematik untuk tempat <em>Hang-out</em> Anda</p>
+				<form action="">
+					<input type="text" placeholder="Cari Berdasarkan Lokasi Atau Nama Taman">
+					<button type="submit"><i class="ion-ios-search-strong"></i></button>
+				</form>
+			</div>
+
+			<!--batas akhir header-->
+
+			<div class="grid-layout" id="apps">
+				
+			</div>
+
+			<!--batas content-->
+
+			<div class="footer">
+				<p>&copy;Copyright 2017 by talentbandung.id</p>
+			</div>
+
+			<!--Batas footer-->
+
+		</div>
+
+		<!--Penutup-->
+
+		<script>
+			<div class="grid-item">
+				<a href="single.html">
+					<div class="taman">
+						<figure>
+							<img v-bind:src="data.image.thumbnail" alt="Taman Balai Kota">
+						</figure>
+						<div class="taman-detail">
+							<h2>
+								<span class="subtitle">Taman</span>
+								<span class="title">{{data.nama}}</span>
+							</h2>
+							<p>Jl. Wastukencana, Bandung Wetan</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</script>
+		<script src="assets/vue.js"></script>
+		<script>
+			Vue.component('item-taman', {
+			  props: ['data'],
+			  template: '#template-taman'
+			});
+
+
+			var app = new Vue({
+			 	el: '#apps',
+			 	data: {
+			 		daftarTaman:[]
+			 	},
+			 	created: function(){
+			 		this.getData();
+			 	},
+				computed: {
+			    getData: function(){
+			    	var _this = this$.get('https://ariona.net/talentbandung', function(){ 
+			    		_this.daftarTaman = data;
+			    	})
+			    }
+			  }
+			})
+		</script>
+	</body>
+</html>

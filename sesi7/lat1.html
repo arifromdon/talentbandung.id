@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Html5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+  <body>
+		<!-- <div id="app">
+			{{message+' '+nama}}
+		</div> -->
+
+		<!-- latihan 1 -->
+
+
+
+
+
+		<div id="apps">
+		  <div class="notice" v-if="error">
+		     <p>{{errorMessage}}</p>
+		  </div>
+		  <ul>
+	      <li v-for="buah in daftarBuah">
+				{{buah}}
+				</li>
+			</ul>
+			<input type="text" v-model="message">
+			<button v-on:click="sayHello">tekan</button>
+  		<p>Ada apa Yaaach : {{message}}</p>
+  		<p>{{reverse}}</p>
+  		<ol>
+	      <item-buah
+	        v-for="buah in daftarBuahan"
+	        v-bind:buah="buah"
+	        v-bind:key="buah.id">
+	     	</item-buah>
+	  	</ol>
+		</div>
+
+
+
+		<script src="assets/vue.js"></script>
+		<script>		
+
+			Vue.component('item-buah', {
+			  props: ['buah'],
+			  template: '<li>{{ buah.nama }}</li>'
+			});
+
+			var app = new Vue({
+			 	el: '#apps',
+			 	data: {
+			  	errorMessage: 'Format alamat email salah',
+			    error: true,
+			    daftarBuah: ["Apel","Mangga","Jeruk","Lemon"],
+			    message: 'Start Typing',
+			    daftarBuahan: [
+				    { id: 0, nama: 'Semangka' },
+				    { id: 1, nama: 'Apel' },
+				    { id: 2, nama: 'Jeruk' },
+				    { id: 3, nama: 'gedang' }
+				  ]
+			  },
+			  methods: {
+			   sayHello: function(){
+			     alert(this.message)
+			    }
+			  },
+			  computed: {
+			    reverse: function(){
+			    	return this.message.split('').reverse().join('');
+			   	}
+			 	}
+
+
+			})
+	
+		</script>
+  </body>
+</html>

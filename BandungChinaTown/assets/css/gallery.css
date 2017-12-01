@@ -117,6 +117,14 @@ body {
 	padding: 8px;
 }
 
+.content-item:hover {
+	opacity: .7;
+}
+
+.content-item > a:hover {
+	cursor: zoom-in;
+}
+
 
 
 
@@ -125,7 +133,7 @@ body {
 
 .footer {
 	width           : auto;
-	height          : 4rem;
+	height          : 100%;
 	font-size       : 15px;
 	text-align      : center;
 	margin          : auto;
@@ -133,6 +141,15 @@ body {
 	display         : block;
 }
 
+.footer > img {
+	max-width: 10%;
+	height: auto;
+	padding: 0 1rem;
+	display: inline-block;
+	margin: auto;
+}
+
 .footer > p {
 	line-height: 4rem;
+	display: inline-block;
 }

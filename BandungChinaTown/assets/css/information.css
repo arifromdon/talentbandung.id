@@ -122,6 +122,7 @@ body {
 	grid-template-columns: 25% 25% 25% 25%;
 	margin: 1rem auto;
 	border-bottom: 1px solid #DBDBDB;
+	height: 18rem;
 }
 
 .content-info-last {
@@ -137,6 +138,14 @@ figure img {
 	border-radius: 5px;
 }
 
+figure:hover {
+	opacity: .7;
+}
+
+figure > a:hover {
+	cursor: zoom-in;
+}
+
 .title {
 	font-size: 1.3rem;
 	font-weight: bold;
@@ -148,10 +157,14 @@ figure img {
 	font-size: 15px;
 }
 
+article {
+	padding: 0 15px;
+}
+
 .table-content-oper {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-gap: 30px;
+	grid-template-columns: 49% 30% 20%;
+	grid-gap: 5px;
 	margin-bottom: 5rem;
 }
 
@@ -196,7 +209,7 @@ th, td {
 
 .footer {
 	width           : auto;
-	height          : 4rem;
+	height          : 100%;
 	font-size       : 15px;
 	text-align      : center;
 	margin          : auto;
@@ -204,6 +217,15 @@ th, td {
 	display         : block;
 }
 
+.footer > img {
+	max-width: 10%;
+	height: auto;
+	padding: 0 1rem;
+	display: inline-block;
+	margin: auto;
+}
+
 .footer > p {
 	line-height: 4rem;
+	display: inline-block;
 }

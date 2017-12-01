@@ -62,7 +62,7 @@ body {
 
 .banner {
 	margin : auto;
-	padding: 10rem 12rem 5rem 12rem;
+	padding: 10rem 12rem 1rem 12rem;
 }
 
 .banner-inner {
@@ -78,42 +78,6 @@ body {
 .banner-inner > p {
 	display  : block;
 	font-size: 3rem;
-}
-
-.banner form{
-	max-width: 100%;
-	margin   : 70px auto 0;
-	position : relative;
-}
-
-.banner form input{
-	width        : 100%;
-	font-size    : 16px;
-	padding      : 20px 70px 25px 25px;
-	border-radius: 5px;
-	border       : 2px solid transparent;
-	box-shadow   : 1px 2px 16px 1px rgba(0,0,0,0.2);
-	outline      : none;
-	transition   : border-color 300ms ease-out;
-}
-
-.banner form input:focus{
-	border: 2px solid #57adfe;
-}
-
-.banner form button{
-	position     : absolute;
-	top          : 5px;
-	bottom       : 5px;
-	right        : 18px;
-	font-size    : 20px;
-	color        : white;
-	border       : 1px solid transparent;
-	border-radius: 3px;
-	box-shadow   : 1px 2px 16px 1px rgba(0,0,0,0.2);
-	margin       : auto;
-	padding      : 4px 15px;
-	background   : #FF5A5F;
 }
 
 
@@ -162,6 +126,7 @@ h2 , .carousel-title {
 	padding: 5px;
 	color: #484848;
 	font-size: 15px;
+	right: 25px;
 }
 
 .grid-content {
@@ -179,6 +144,7 @@ h2 , .carousel-title {
 	width: auto;
 	margin: auto;
 	height: 100%;
+	overflow: hidden;
 }
 
 figure , img {
@@ -186,6 +152,16 @@ figure , img {
 	margin: auto;
 	border: 1px solid transparent;
 	border-radius: 5px;
+}
+
+figure:hover {
+	opacity: .7;
+	cursor: zoom-in;
+	border: none;
+}
+
+figure a:hover {
+	cursor: zoom-in;
 }
 
 .content-detail {
@@ -248,7 +224,7 @@ figure , img {
 
 .footer {
 	width           : auto;
-	height          : 4rem;
+	height          : 100%;
 	font-size       : 15px;
 	text-align      : center;
 	margin          : auto;
@@ -256,6 +232,30 @@ figure , img {
 	display         : block;
 }
 
+.footer > img {
+	max-width: 10%;
+	height: auto;
+	padding: 0 1rem;
+	display: inline-block;
+	margin: auto;
+}
+
 .footer > p {
 	line-height: 4rem;
+	display: inline-block;
+}
+
+
+
+
+
+
+			/*media screen*/
+
+
+
+@media screen and (min-width: 1085px){
+	.navbar {
+		overflow: hidden;
+	}
 }

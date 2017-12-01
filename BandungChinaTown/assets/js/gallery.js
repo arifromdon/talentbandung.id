@@ -1,13 +1,4 @@
-var navbar = document.getElementById("topNav");
-      var sticky = navbar.offsetTop;
 
-      function navSticky() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
 
 var gallery = $(".gallery-carousel").slick({
       infinite : true,
